@@ -48,9 +48,9 @@ const TaskContext = ({ children }) => {
     }
   };
 
-  const handleEdit = (taskId) => {
-    setFormValue(taskId);
-    setEdit(taskId.id);
+  const handleEdit = (task) => {
+    setFormValue(task);
+    setEdit(task.id);
   };
 
   const handleDel = async (taskId) => {
