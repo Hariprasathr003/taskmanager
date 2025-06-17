@@ -14,7 +14,7 @@ const TaskContext = ({ children }) => {
     description: "",
     priority: "",
     completed: false,
-    createdDate: 0,
+    createdDate: new Date(),
   };
 
   const [formValue, setFormValue] = useState(initialValue);

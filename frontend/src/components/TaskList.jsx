@@ -26,7 +26,7 @@ const TaskList = () => {
           Task Update
         </h2>
         <div className="flex justify-end items-center mb-6">
-          <h1 className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md font-medium">
+          <h1 className=" text-gray-800  px-4 py-2 rounded-md font-medium">
             Total Tasks: <strong>{taskFilter.length}</strong>
           </h1>
         </div>
