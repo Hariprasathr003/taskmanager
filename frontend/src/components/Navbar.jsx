@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { TaskManagerContext } from "./contextpage/TaskContext";
 
 const Navbar = () => {
-  const { search, setSearch, taskFilter } = useContext(TaskManagerContext);
+  const { search, setSearch, reloadpage } = useContext(TaskManagerContext);
   return (
     <>
       <nav className="bg-green-800 text-white w-full top-0 left-0">
@@ -29,7 +29,7 @@ const Navbar = () => {
             />
             <button
               className="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded"
-              onClick={taskFilter}
+              onClick={reloadpage}
             >
               Search
             </button>

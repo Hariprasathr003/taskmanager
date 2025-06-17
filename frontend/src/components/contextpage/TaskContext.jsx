@@ -91,6 +91,7 @@ const TaskContext = ({ children }) => {
         handleDel,
         setSearch,
         settaskFilter,
+        reloadpage,
 
         taskFilter,
       }}
