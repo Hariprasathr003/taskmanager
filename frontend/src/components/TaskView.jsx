@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { TaskManagerContext } from "./contextpage/TaskContext";
 
-const TaskTitle = () => {
+const TaskView = () => {
   const { taskFilter } = useContext(TaskManagerContext);
 
   const colourpriority = (priority) => {
@@ -20,7 +20,7 @@ const TaskTitle = () => {
   return (
     <div className="min-h-screen bg-gray-50 p-4">
       <h2 className="text-3xl font-bold text-gray-800 text-center mb-4">
-        Tasks
+        TaskView
       </h2>
 
       <div className="flex justify-end mb-6">
@@ -79,4 +79,4 @@ const TaskTitle = () => {
   );
 };
 
-export default TaskTitle;
+export default TaskView;
